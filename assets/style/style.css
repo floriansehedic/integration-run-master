@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Source Sans 3";
+  src: url(../fonts/SourceSans3-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  block-size: border-box;
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 3.4rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  letter-spacing: -1px;
+}
+
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  line-height: 36px;
+  margin: 25px 0;
+}
+
+.button {
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 50px;
+  padding: 13px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font: 500 0.75rem "Source Sans Pro";
+  transition: 0.3s;
+}
+
+.button:hover,
+footer a:hover {
+  border: 1px solid skyblue;
+  color: skyblue;
+}
+
+/********************************/
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
