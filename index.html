@@ -3,78 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Run master</title>
+    <title>Run</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-    <link href="./style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style/style.css" />
   </head>
 
   <body>
     <header>
-      <div class="header-left">
-        <h1>Run</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
-          suscipit sed corrupti possimus quibusdam velit magnam debitis quasi
-          adipisci quia, enim omnis perspiciatis accusamus ab eveniet alias
-          maxime ex.
-        </p>
-        <button>get started</button>
+      <div class="container">
+        <div>
+          <h1>Run</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas rerum
+            eveniet quidem non consectetur repellendus id sapiente ex recusandae
+            sint.
+          </p>
+          <a href="#" class="button">Get Started</a>
+        </div>
       </div>
-      <div class="header-right">
-        <img src="./img/banner.jpg" alt="photo d'une piste d'athlétisme" />
-      </div>
+      <div class="img-banner"></div>
     </header>
-    <div class="first-article">
-      <div class="first-article-right-part">
-        <img src="./img/img-left.jpg" alt="un coureur dans la forêt" />
-      </div>
-      <div class="first-article-right-part">
-        <h2>Magna etiam feugiat</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
-          commodi velit distinctio eligendi iusto nemo iste expedita,
-          repellendus ipsam, fugit, nihil nesciunt exercitationem? Ad nulla
-          similique modi voluptatem voluptates aliquid.
-        </p>
-        <button>learn more</button>
-      </div>
-    </div>
-    <div class="second-article">
-      <div class="second-article-left-part">
-        <h2>Tempus adipiscing</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia placeat
-          architecto id voluptatem corporis harum exercitationem quis optio, eos
-          aut accusamus deleniti praesentium obcaecati eius perspiciatis
-          similique repudiandae suscipit voluptas!
-        </p>
-        <button>learn more</button>
-      </div>
-      <div class="second-article-right-part">
-        <img src="./img/img-right.jpg" alt="coureur sous un pont" />
-      </div>
-    </div>
-    <section>
-      <div class="formulaire">
-        <h2>get in touch</h2>
-        <label for="name">nom</label>
-        <input id="name" type="text" /><br />
-        <label for="email">email</label>
-        <input id="email" type="text" /><br />
-        <label for="message">message</label>
-        <input id="message" type="text" /><br />
-        <button type="submit" value="Valider">send message</button>
+
+    <section class="section-1">
+      <div class="img"></div>
+      <div class="container">
+        <div>
+          <h2>Magna etiam feugiat</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
+            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
+            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
+            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum
+            dolor sit amet.
+          </p>
+          <a href="#" class="button">Learn More</a>
+        </div>
       </div>
     </section>
-    <div class="network">
-      <i class="fa-brands fa-x-twitter"></i>
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-linkedin-in"></i>
-      <i class="fa-regular fa-envelope"></i>
-    </div>
+
+    <section class="section-2">
+      <div class="container">
+        <div>
+          <h2>Tempus adipiscing</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
+            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
+            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
+            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum
+            dolor sit amet.
+          </p>
+          <a href="#" class="button">Learn More</a>
+        </div>
+      </div>
+      <div class="img"></div>
+    </section>
+
+    <section class="contact">
+      <h2>Get in touch</h2>
+      <form method="post" action="#">
+        <div class="form-grid">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+          </div>
+          <div class="textarea">
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+          </div>
+        </div>
+        <input type="submit" class="button" value="Send Message" />
+      </form>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="far fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
