@@ -51,7 +51,49 @@ footer a:hover {
   color: skyblue;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px;
+}
+
+.section-1,
+.section-2,
+.contact {
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.082);
+}
 /********************************/
+
 body {
   font-family: "Source Sans 3", sans-serif;
+}
+
+header {
+  min-height: 100vh;
+  /** Doit faire au moins 100% de la hauteur de la taille de l'écran **/
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.img-banner {
+  background: url(../img/banner.jpg) right/cover;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.img-left {
+  background: url(../img/img-left.jpg) center/cover;
+}
+
+.section-2 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.img-right {
+  background: url(../img/img-right.jpg) center/cover;
 }
