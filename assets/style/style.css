@@ -111,8 +111,7 @@ header {
   grid-template-areas: 
     "input1 input2"
     "textarea textarea";
-  gap: 30px;
-  width: 85%;
+  max-width: 600px;
   margin: 30px auto;
 }
 
@@ -126,9 +125,17 @@ label {
   letter-spacing: 1px;
 }
 
-input[type="text"],
+input[type="text"] {
+  width: 90%;
+  margin: 20px 0 40px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: 0.2s;
+}
+
 textarea {
-  width: 100%;
+  width: 95%;
   margin: 20px 0 40px;
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -143,7 +150,7 @@ textarea {
 
 input[type="text"]:focus,
 textarea:focus {
-  outline: 1px solid skyblue;
+  outline: 2px solid skyblue;
 }
 
 
