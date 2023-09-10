@@ -8,6 +8,7 @@
   padding: 0;
   block-size: border-box;
   list-style-type: none;
+  outline: none;
 }
 
 h1 {
@@ -96,4 +97,90 @@ header {
 
 .img-right {
   background: url(../img/img-right.jpg) center/cover;
+}
+
+.contact {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 224px;
+  grid-template-areas: 
+    "input1 input2"
+    "textarea textarea";
+  gap: 30px;
+  width: 85%;
+  margin: 30px auto;
+}
+
+.textarea {
+  grid-area: textarea;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  margin: 20px 0 40px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+textarea {
+  height: 180px;
+  resize: none;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: 1px solid skyblue;
+}
+
+
+/************ FOOTER *************/
+
+footer {
+  padding: 70px 0 90px;
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.082);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+footer a {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
 }
